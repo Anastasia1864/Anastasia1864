@@ -1,0 +1,514 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    
+}
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navList{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+.content{
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 60px;
+}
+
+body{
+    background: #000000;
+}
+
+header{
+    background: #191527;
+    height: 60px;
+
+    /*  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*  */
+}
+header a{
+    color: white; 
+    margin: 0 20px;
+    text-decoration: none;
+}
+.start{
+    height:1000px;
+    width: 100%;
+    background: url('обложка.png') right center / cover no-repeat;
+}
+.start-Netflix{
+    color:aliceblue;
+    justify-content: start;
+    font-size: 35px;
+    padding: 60px 0px 0px 0px;
+
+}
+.start-series{
+    color:aliceblue;
+    justify-content: center;
+    color: red;
+    font-size: 25px;
+    padding: 60px 0px 0px 350px;
+    transform: scale(0.94);
+    animation: scale 3s 0.3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+}
+span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+span:nth-child(1) {
+    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+  
+span:nth-child(2) {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+  
+span:nth-child(3) {
+    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+  
+span:nth-child(4) {
+    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+}
+.wednesdayimage img{
+    padding: 20px 400px 0px 40px;
+}
+.start-text{
+    color:aliceblue;
+    justify-content: start;
+    font-size: 20px;
+    padding: 40px 400px 30px 0px;
+}
+
+
+
+.rating{
+    display: flex;
+    align-items: center;
+    width: 170px;
+    padding: 100px 0px 0px 400px;
+}
+.rating img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+.wednesday{
+    height:1000px;
+    width: 100%;
+    position: relative;
+    background: url('задний фон 2.png') right center / cover no-repeat;
+}
+.image3{
+    width: 35%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 0px 50px 24px 50px;
+    transition: 2s;
+}
+.image3:hover{
+    transform: scale(1.1);
+}
+.start-wednesday{
+    color:aliceblue;
+    justify-content: start;
+    font-size: 24px;
+    font-style: italic;
+    padding: 300px 560px 20px 120px ;
+}
+.wednesdaytext{
+    color: red;
+}
+.end-wednesday{
+    color:aliceblue;
+    justify-content: start;
+}
+.end-wednesday{
+    color:aliceblue;
+    justify-content: start;
+    font-size: 20px;
+    padding: 20px 80px 0px 0px;
+}
+
+.thing-header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.image5{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 2s;
+}
+.image5:hover{
+    transform: scale(1.2);
+}
+.image4{
+    width: 65%;
+}
+.thing{
+    height:900px;
+    width: 100%;
+
+    background: url('вещь.png') right center / cover no-repeat;
+}
+.text{
+    color: aliceblue;
+    font-size: 23px;
+    padding: 40px 20px;
+}
+.textthing{
+    margin-top: 120px;
+    margin-right: 25%;
+    color: aliceblue;
+    justify-content: center;
+    font-size: 60px;
+}
+.Mortisha{
+    height:900px;
+    width: 100%;
+    position: relative;
+    background: url('задний фон4.png') right center / cover no-repeat;
+}
+.Mortisha-slide{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+}
+.image6{
+    width: 65%;
+    position: absolute;
+    left: -60px;
+    transition: 2s;
+
+}
+.image6:hover{
+    transform: scale(1.2);
+}
+.Mortisha-info{
+    position: relative;
+    z-index: 2;
+    justify-self: end;
+    text-align: center;
+    
+}
+.textmortisha{
+    margin-top: 120px;
+    
+    color: aliceblue;
+    
+    font-size: 60px;
+    
+}
+.end-mortisha{
+    color: aliceblue;
+    font-size: 23px;
+    width: 600px;
+    padding: 40px 0px;
+}
+.Gomes{
+    /* height:900px; */
+    width: 100%;
+    position: relative;
+    background: url('заднийфон5.png') right bottom / cover no-repeat;
+}
+
+.image8{
+    height: 100%;
+    /* width: 60%; */
+    position: absolute; 
+    right: -150px;
+    transition: 2s;
+    bottom: 0;
+}
+.image8:hover{
+    transform: scale(1.2);
+}
+.Gomes-slide{
+    display: flex;
+    position: relative;
+    /* flex-direction: row-reverse;
+    justify-content: space-between; */
+    
+}
+.gomes-header{
+    position: relative;
+    z-index: 2;
+    justify-self: end;
+    text-align: center;
+}
+.textgomes{
+    margin-top: 120px;
+    
+    color: aliceblue;
+    
+    font-size: 60px;
+}
+.end-gomes{
+    color: aliceblue;
+    font-size: 23px;
+    width: 600px;
+    padding: 40px 0px;
+}
+.gomes-second{
+    color: aliceblue;
+    font-size: 23px;
+    width: 600px;
+    padding: 30px 0px;
+}
+.home{
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.home::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.home__video{
+    padding-bottom: 56.25%;
+}
+.home video {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+.home__content{
+    width: 100%;
+    /* height: 100%; */
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    z-index: 3;
+    font-family: sans-serif;
+
+}
+.home__content h1{
+    font-size: 5vw;
+    margin: 0 0 15px;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: center;
+}
+.home__content p{
+    text-align: center;
+    font-size: 2;
+}
+footer{
+    background: #191527;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    text-align: center;
+    color: white;
+}
+@media (max-width: 1580px){
+    .wednesdayimage img{
+        width: 60%;
+    }
+}
+@media (max-width: 1400px){
+    
+    .start-text{
+        font-size: 22px;
+        padding: 50px 450px 0px 0px;
+        
+    }
+    .rating{
+        width: 200px;
+    }
+    .rating img{
+        width: 200px;
+    }
+}
+@media (max-width: 1300px){
+    .wednesdayimage img{
+        width: 50%;
+
+    }
+    .start-text{
+        font-size: 22px;
+        padding: 50px 530px 0px 0px;
+    }
+    .start-series{
+        padding: 60px 40px 0px 200px;
+    }
+    .rating{
+        padding: 80px 0px 0px 300px;
+    }
+    .start-wednesday{
+        font-size: 24px;
+        padding: 400px 600px 30px 100px;
+    }
+    
+    .image3{
+        width: 40%;
+        padding: 0px 50px 90px 50px;
+    }
+    .image4{
+        padding: 50px 0px 0px 0px;
+    }
+    .text{
+        font-size: 22 px;
+        padding: 0px 160px 0px 50px;
+    }
+    .textthing{
+        padding: 0px 0px 80px 0px;
+    }
+    .image5{
+        width: 25%;
+        padding: 70px 180px 0px 0px;
+    }
+    .image6{
+        width: 55%;
+    }
+    .textmortisha{
+        font-size: 55px;
+        padding: 0px 80px 0px 20px;
+    }
+    .end-mortisha{
+        padding: 40px 110px 0px 50px;
+        
+    }
+    .image8{
+        padding: 0px 140px 0px 0px;
+    }
+    .thing{
+        height: 800px;
+    }
+    .Mortisha{
+        height: 700px;
+    }
+    
+}
+@media (max-width: 1100px){
+    .wednesdayimage img{
+        width: 45%;
+    }
+    .start-series{
+        padding: 60px 100px 0px 120px;
+    }
+    .rating{
+        padding: 100px 0px 0px 210px;
+    }
+    .start-text{
+        font-size: 22px;
+        padding: 130px 550px 0px 0px;
+    }
+    
+    .end-mortisha{
+        font-size: 22px;
+        padding: 40px 70px 0px 50px;
+    }
+    .image6{
+        width: 52%;
+    }
+    .image8{
+        width: 51%;
+    }
+    .gomes-second{
+        padding: 30px 0px 200px 0px;
+    }
+}
+@media (max-width: 1100px){
+    .start{
+        background-position: -600px 0px;
+        /* background: url('обложка.png') right center / cover no-repeat; */
+    }
+    .start-wednesday{
+        color:aliceblue;
+        justify-content: start;
+        font-size: 24px;
+        font-style: italic;
+        padding: 300px 400px 20px 50px ;
+    }
+    .wednesdayimage img{
+        width: 53%;
+    }
+    .image5{
+        width: 22%;
+        padding: 60px 180px 0px 0px;
+    }
+    .Mortisha-slide{
+        flex-direction: column;
+    }
+    .image6{
+       position: static;
+       display: block;
+       margin: 0 auto;
+    }
+    .Mortisha{
+        height: auto;
+    }
+    .end-mortisha{
+        font-size: 20px;
+        margin: 0 auto;
+        /* padding: 50px 70px 0px 50px; */ 
+    }
+    .Gomes-slide{
+        flex-direction: column;
+    }
+    
+    
+    .image8{
+        position: static;
+        display: block;
+        margin: 0 auto;
+    }
+    .Gomes{
+        height: auto;
+    }
+    .end-gomes{
+        font-size: 21px;
+        margin: 0 auto;
+    }
+    .gomes-second{
+        font-size: 21px;
+        margin: 0 auto;
+    }
+}
